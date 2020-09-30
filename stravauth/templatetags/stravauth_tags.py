@@ -1,4 +1,5 @@
 from django import template
+from django.http import request
 
 from stravauth.utils import get_stravauth_url
 
@@ -14,5 +15,4 @@ class StravauthUrlNode(template.Node):
         pass
     
     def render(self, context):
-        
-        return get_stravauth_url()
+         return get_stravauth_url()
